@@ -78,6 +78,7 @@ a {
 
 .about_img {
     max-width: 50%;
+    padding-left: 5px;
 }
 .about_img img {
     border-bottom-right-radius: 82px;
