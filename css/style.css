@@ -43,7 +43,7 @@ a {
 
 .copy_wrap {
     margin: 0 auto;
-
+    line-height: 1.17;
     text-align: center;
     max-width: 1000px;
     padding: 10% 0 10% 0;
@@ -55,9 +55,13 @@ a {
     font-size: 82px;
     padding: 6% 0 5% 0;
     align-items: center;
-    line-height: 1.17;
 }
 
+.copy_main br {
+    display: block;
+    content: "";
+    padding: 1.7% 0;
+}
 .copy_sub {
     font-size: 23px;
     text-align: center;
@@ -75,6 +79,10 @@ a {
 .about_img {
     max-width: 50%;
 }
+.about_img img {
+    border-bottom-right-radius: 82px;
+}
+
 .about_right {
     max-width: 41%;
 }
@@ -87,6 +95,11 @@ a {
     line-height: 1.39;
     padding: 6% 0 4% 0;
 }
+.about_sub br {
+    display: block;
+    content: "";
+    padding: 2% 0;
+}
 .about_text {
     font-size: 16px;
     line-height: 1.63;
@@ -97,6 +110,9 @@ a {
     align-items: center;
     max-width: 1000px;
     padding: 11% 0 10% 0;
+}
+.menu_img img {
+    border-top-right-radius: 41px;
 }
 .menu_logo {
     width: 151px;
@@ -111,6 +127,7 @@ a {
     max-width: 1000px;
     display: flex;
     justify-content: space-between;
+    padding: 0 5px 0 5px;
 }
 
 .menu_box {
@@ -119,12 +136,18 @@ a {
 
 .menu_img {
     width: 300px;
+    position: relative;
 }
 .menu_container h3 {
+    position: absolute;
+    top: 94%;
+    left: 13px;
     font-size: 38px;
     color: #d30202;
 }
 .menu_container p {
+    padding-top: 44px;
+    max-width: 300px;
     font-size: 17px;
     line-height: 1.47;
 }
@@ -136,13 +159,11 @@ a {
     width: 245px;
     margin: 0 auto;
 }
-.gallery_slider {
-    width: 100%;
+.gallery_slider ul {
+    max-width: 100vw;
     display: flex;
 }
-.gallery_slider img {
-    width: 384px;
-}
+
 .event_wrap {
     margin: 0 auto;
     max-width: 1000px;
@@ -151,6 +172,7 @@ a {
 .event_logo {
     width: 174px;
     margin: 0 auto;
+    padding-bottom: 4%;
 }
 .event_list {
     max-width: 1000px;
@@ -161,11 +183,17 @@ a {
 .event_list ul {
     width: 660px;
 }
+
 .event_list li {
     display: flex;
-    padding-top: 3%;
     font-size: 23px;
+    padding-top: 3%;
 }
+
+#event1 {
+    padding-top: 0;
+}
+
 .text {
     text-decoration: underline;
     max-width: fit-content;
@@ -182,7 +210,7 @@ a {
 .access_map {
     width: 100%;
     margin: 0 auto;
-    padding-top: 47px;
+    padding-top: 5%;
 }
 footer {
     background-color: #fff;
@@ -190,7 +218,26 @@ footer {
 .footer_wrap {
     margin: 0 auto;
     max-width: 1000px;
+    display: flex;
+    padding-top: 8%;
+}
+.footer_info {
+    padding-left: 7%;
+    line-height: 1.95;
+    font-size: 20px;
 }
 .footer_logo {
     width: 227px;
+}
+.c {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 16px;
+    padding: 8% 0 8% 0;
+}
+.pagetop {
+    position: fixed;
+    right: 40px;
+    bottom: 40px;
+    width: 125px;
 }
