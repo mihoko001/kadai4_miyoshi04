@@ -25,6 +25,9 @@ li {
         "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝",
         "ＭＳ 明朝", serif;
 }
+body {
+    font-feature-settings: "palt";
+}
 
 a {
     /*下線を消す*/
