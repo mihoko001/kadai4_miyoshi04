@@ -148,7 +148,7 @@ a {
 }
 .menu_container p {
     padding-top: 44px;
-    max-width: 300px;
+    max-width: 100%;
     font-size: 17px;
     line-height: 1.47;
 }
@@ -211,10 +211,11 @@ a {
     width: 214px;
     margin: 0 auto;
 }
-.access_map {
+.access_map iframe {
     width: 100%;
     margin: 0 auto;
     padding-top: 5%;
+    height: 471px;
 }
 iframe {
     vertical-align: bottom;
@@ -338,66 +339,68 @@ footer {
     .about_text {
         font-size: 16px;
     }
-
-    @media screen and (max-width: 767px) {
-        .menu_box p {
-            font-size: 17px;
-        }
-
-        .copy_main {
-            font-size: 38px;
-        }
-
-        .kodawari {
-            font-size: 36px;
-        }
-
-        .copy_sub,
-        .day,
-        .text {
-            font-size: 16px;
-        }
-
-        .footer_info {
-            font-size: 18px;
-        }
-
-        .about_logo {
-            width: 160px;
-        }
-        .menu_logo {
-            width: 88px;
-        }
-        .gallery_logo {
-            width: 142px;
-        }
-        .event_logo {
-            width: 101px;
-        }
-        .access_logo {
-            width: 124px;
-        }
-        .footer_logo {
-            width: 227px;
-        }
-        .about_wrap {
-            flex-direction: column;
-        }
-        .about_img img {
-            border-bottom-right-radius: 0;
-        }
-        .about_logo {
-            padding-bottom: 2%;
-        }
-        .about_img {
-            max-width: 100%;
-            padding: 0;
-        }
-        .kodawari,
-        .about_text {
-            padding: 0 5% 0 5%;
-        }
+}
+@media screen and (max-width: 767px) {
+    .menu_box p {
+        font-size: 17px;
     }
+
+    .copy_main {
+        font-size: 38px;
+    }
+
+    .kodawari {
+        font-size: 36px;
+    }
+
+    .copy_sub,
+    .day,
+    .text {
+        font-size: 16px;
+    }
+
+    .footer_info {
+        font-size: 18px;
+    }
+
+    .about_logo {
+        width: 160px;
+    }
+    .menu_logo {
+        width: 88px;
+    }
+    .gallery_logo {
+        width: 142px;
+    }
+    .event_logo {
+        width: 101px;
+    }
+    .access_logo {
+        width: 124px;
+    }
+    .footer_logo {
+        width: 227px;
+    }
+    .about_wrap {
+        flex-direction: column;
+    }
+    .about_img img {
+        border-bottom-right-radius: 0;
+    }
+    .about_logo {
+        padding-bottom: 5%;
+    }
+    .about_img {
+        max-width: 100%;
+        padding: 0;
+
+        margin-left: 0;
+    }
+    .kodawari,
+    .about_text {
+        padding: 0 5% 0 5%;
+    }
+
     .about_right {
         display: contents;
     }
@@ -415,14 +418,52 @@ footer {
         order: 4;
     }
     .menu_wrap {
-        max-width: 100%;
+        max-width: 80%;
     }
     .menu_container {
         flex-direction: column;
+        padding: 0;
     }
     .menu_box {
         max-width: 100%;
     }
+    .menu_container p {
+        padding-bottom: 30px;
+    }
+    .menu_container h3 {
+        font-size: 40px;
+    }
+    .event_list {
+        margin: 0 5% 0 5%;
+    }
+
+    .event_list ul {
+        display: block;
+        width: 77%;
+    }
+    .event_list li {
+        flex-direction: column;
+    }
+    .text {
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        padding: 2px 0 15px 0;
+    }
+    #event3 .text {
+        padding-bottom: 0;
+    }
+    .access_map iframe {
+        height: 191px;
+    }
+    .footer_wrap {
+        flex-direction: column;
+    }
+    .footer_info {
+        padding-left: 0;
+        padding-top: 34px;
+    }
+
     .pagetop {
         position: fixed;
         /* right: 12px; */
