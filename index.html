@@ -9,8 +9,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Design Cafe</title>
     <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
     <link rel="stylesheet" href="./css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 </head>
 
 <body>
@@ -24,6 +28,13 @@
                         <img src="./images/pc_first-100.jpg" alt="店内の様子">
                     </picture>
                 </div>
+                <div>
+                    <picture>
+                        <source srcset="./images/sp_main_vs_2@2x-100.jpg" media="(max-width:767px)">
+                        <img src="./images/slider_2.jpg" alt="店内の様子">
+                    </picture>
+                </div>
+
             </div>
             <div class="header_wrap">
                 <h1 class="header_logo">
@@ -184,7 +195,7 @@
                                 <picture>
                                     <source srcset="./images/cake_sp@2x-100.jpg" media="(max-width:767px)">
 
-                                    <img src="./images/./images/pc_menu_sweets-100.jpg" alt="チーズケーキ">
+                                    <img src="./images/pc_menu_sweets-100.jpg" alt="チーズケーキ">
                                 </picture>
 
 
@@ -213,7 +224,7 @@
                 </div>
             </div>
             <div class="gallery_slider">
-                <ul>
+                <ul class="slick1">
                     <li><img src="./images/pc_gallary_01-100.jpg" alt="ラテアート"></li>
                     <li><img src="./images/pc_gallary_02-100.jpg" alt="店頭ロゴ">
                     </li>
@@ -223,6 +234,16 @@
                     </li>
                     <li><img src="./images/pc_gallary_05-100.jpg" alt="賑わう様子">
                     </li>
+                    <li><img src="./images/pc_gallary_01-100.jpg" alt="ラテアート"></li>
+                    <li><img src="./images/pc_gallary_02-100.jpg" alt="店頭ロゴ">
+                    </li>
+                    <li><img src="./images/pc_gallary_03-100.jpg" alt="店内の様子">
+                    </li>
+                    <li><img src="./images/pc_gallary_04-100.jpg" alt="コーヒー豆">
+                    </li>
+                    <li><img src="./images/pc_gallary_05-100.jpg" alt="賑わう様子">
+                    </li>
+
                 </ul>
             </div>
 
@@ -309,6 +330,42 @@
                 $('.sp_btn').toggleClass('open');
                 $('.sp_nav').fadeToggle();
             })
+
+            $('.header_slider').slick({
+                autoplay: true,
+                autoplaySpeed: 2000,
+                dots: true,
+                // arrows: false,
+
+            });
+
+            $('.slick1').slick({
+                infinite: true,
+                slidesToShow: 5,
+                slidesToScroll: 1,
+                responsive: [
+                    {
+                        breakpoint: 1100,
+                        settings: {
+
+                            slidesToShow: 3,
+                            slidesToScroll: 1,
+                            infinite: true,
+                            dots: true
+                        }
+                    },
+                    {
+                        breakpoint: 767,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                    },
+
+
+                ]
+            });
+
         })
     </script>
 </body>
