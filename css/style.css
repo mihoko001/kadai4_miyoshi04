@@ -178,7 +178,7 @@ a {
 .event_wrap {
     margin: 0 auto;
     max-width: 100%;
-    padding: 7% 0 8% 0;
+    padding: 7% 2% 8% 2%;
 }
 .event_logo {
     width: 174px;
@@ -186,10 +186,11 @@ a {
     padding-bottom: 4%;
 }
 .event_list {
+    margin: 0 auto;
+
     max-width: 1000px;
     background-color: #fff;
     border: 4px solid #4f260b;
-    margin: 0 10px 0 10px;
 }
 .event_list ul {
     width: 67%;
@@ -270,6 +271,7 @@ footer {
 
 .slick-prev {
     left: 20%;
+    z-index: 100;
 }
 
 .slick-prev::before {
@@ -500,6 +502,14 @@ footer {
     }
     #event3 .text {
         padding-bottom: 0;
+    }
+
+    .slick-prev {
+        left: 4%;
+    }
+
+    .slick-next {
+        right: 4%;
     }
 
     .access_map iframe {
